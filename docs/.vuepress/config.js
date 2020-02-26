@@ -83,7 +83,8 @@ module.exports = {
             },
             {
                 title: 'Муфты',
-                path: '/mufti/'
+                path: '/mufti/',
+
             },
             {
                 title: 'Термоусадка',
@@ -107,6 +108,89 @@ module.exports = {
             {
                 title: 'Вводы',
                 path: '/vvodi/',
+                children: [
+                    {
+                        title: 'Кабельные вводы общепромышленные',
+                        path: '/vvodi/1/',
+                        collapsable: false,
+                        children: [
+                            ['/vvodi/1/1', 'Для круглого небронированного кабеля с резьбой M, G, PG, NPT'],
+                            ['/vvodi/1/2', 'Для плоского Греющего кабеля ВКГ'],
+                            ['/vvodi/1/3', 'Для кабеля в металлорукаве ВК-М-МР']
+                        ]
+                    },
+                    {
+                        title: 'Кабельные вводы взрывозащищенные',
+                        path: '/vvodi/2/',
+                        collapsable: false,
+                        children: [
+                            {
+                                title: 'Для небронированного кабеля',
+                                path: '/vvodi/2/1/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/2/1/1', 'ВКВ (Ex e)'],
+                                    ['/vvodi/2/1/2', 'ВКВ2 (Ex d,e)']
+                                ]
+                            },
+                            {
+                                title: 'Для бронированного кабеля',
+                                path: '/vvodi/2/2/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/2/2/1', 'ВКВБ1 (Ex d,e) с уплотнением внутренней оболочки'],
+                                    ['/vvodi/2/2/1', 'ВКВБ2 (Ex d,e) с уплотнением внутренней и внешней оболочки'],
+                                    ['/vvodi/2/2/3', 'ВКВБ3 (Ex d,e) с уплотнением внешней оболочки']
+                                ]
+                            },
+                            {
+                                title: 'Для кабеля в металлорукаве',
+                                path: '/vvodi/2/3/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/2/3/1', 'ВКВМР (Ex e)'],
+                                    ['/vvodi/2/3/2', 'ВКВ2МР (Ex d,e)']
+                                ]
+                            },
+                            {
+                                title: 'Для кабеля в трубе',
+                                path: '/vvodi/2/4/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/2/4/1', 'ВКВ2ТВ с внутренней резьбой'],
+                                    ['/vvodi/2/4/2', 'ВКВ2ТН с внешней резьбой']
+                                ]
+                            },
+                            ['/vvodi/2/1', 'Переходные муфты МПВ (Ex e)'],
+                            ['/vvodi/2/2', 'Заглушки ЗРВ (Ex e)']
+                        ]
+                    },
+                    {
+                        title: 'Гайки и прокладки',
+                        path: '/vvodi/3/',
+                        collapsable: false,
+                        children: [
+                            {
+                                title: 'Гайки заземляющие',
+                                path: '/vvodi/3/1/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/3/1/1', 'ГЗ (общепромышленное применение'],
+                                    ['/vvodi/3/1/2', 'ГЗ2 (для взрывозазищенного оборудования)']
+                                ]
+                            },
+                            {
+                                title: 'Гайки плоские',
+                                path: '/vvodi/3/2/',
+                                collapsable: false,
+                                children: [
+                                    ['/vvodi/3/2/1', 'ГП (общепромышленное применение)'],
+                                    ['/vvodi/3/2/2', 'ГП2 (для взрывозазищенного оборудования)']
+                                ]
+                            },
+                        ]
+                    }
+                ]
             },
             {
                 title: 'Коробки',
@@ -271,7 +355,13 @@ module.exports = {
             },
             {
                 title: 'Заземление',
-                path: '/zazemlenie/'
+                path: '/zazemlenie/',
+                children: [
+                    ['/zazemlenie/1', 'Проводник заземляющий П'],
+                    ['/zazemlenie/2', 'Перемычка ПГС'],
+                    ['/zazemlenie/3', 'Держатель шины заземления'],
+                    ['/zazemlenie/4', 'Флажок Ф'],
+                ]
             }
         ]
     }
