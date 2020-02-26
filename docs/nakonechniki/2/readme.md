@@ -23,7 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
     | Parameter | Type   | Description |
     |-----------|--------|-------------|
-    | foo       | bar    | Description |
+    | api_key   | string | Description |
 
     **Optional:**
 
